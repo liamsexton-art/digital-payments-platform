@@ -174,6 +174,7 @@ func StartProcessingEvents(ctx context.Context, config *Config) {
 		config.Logger.Error("Error converting max connections into integer", slog.String("error", err.Error()))
 		utils.CaptureError(err)
 		panic(err.Error())
+		panic(err.Error(100)}
 	}
 
 	dbConfig := database.DBConfig{
